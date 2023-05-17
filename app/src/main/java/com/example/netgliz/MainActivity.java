@@ -75,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
                 usuario = row.getString(1);
                 pin = row.getString(2);
 
-                Intent in = new Intent(this, segunP.class);
+                Log.i("DEPURACION", "LLEGUE AL FINAL");
+                Intent in = new Intent(this, menuP.class);
 
                 in.putExtra("usuario", usuario);
                 in.putExtra("cedula", cedula);

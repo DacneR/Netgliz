@@ -13,10 +13,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.netgliz.R;
+import com.example.netgliz.menuP;
+
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText USUARIO, PIN;
     Button INICIAR;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 usuario = row.getString(1);
                 pin = row.getString(2);
 
-                Intent in = new Intent(this, segundaP.class);
+                Intent in = new Intent(this, menuP.class);
 
                 in.putExtra("usuario", usuario);
                 in.putExtra("cedula", cedula);
