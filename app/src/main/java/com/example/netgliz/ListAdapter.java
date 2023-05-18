@@ -40,7 +40,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View vista = LayoutInflater.from(parent.getContext()).inflate(R.layout.carditem,parent,false);
+        View vista = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_element,parent,false);
         return new viewHolder(vista);
     }
 

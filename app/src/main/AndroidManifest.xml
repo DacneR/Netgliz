@@ -16,6 +16,9 @@
             android:name=".descripP"
             android:exported="false" />
         <activity
+            android:name=".menuP"
+            android:exported="false" />
+        <activity
             android:name=".registrar"
             android:exported="false" />
         <activity

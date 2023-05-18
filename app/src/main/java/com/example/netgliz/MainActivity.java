@@ -21,12 +21,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         REGISTRAR = findViewById(R.id.btnRegistrar);
         INICIAR = findViewById(R.id.btnLoguear);
 
         USUARIO = findViewById(R.id.Txtusuario);
         PIN = findViewById(R.id.Txtpin);
     }
+
     public void  onStart(){
         super.onStart();
 
@@ -100,4 +102,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }

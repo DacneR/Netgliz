@@ -20,7 +20,7 @@ public class registrar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
 
-        CC = findViewById(R.id.Txtcedu);
+        CC = findViewById(R.id.Txtced);
         U = findViewById(R.id.Txtusuario);
         P = findViewById(R.id.Txtpin);
 
