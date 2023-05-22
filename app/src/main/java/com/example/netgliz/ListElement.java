@@ -1,6 +1,8 @@
 package com.example.netgliz;
 
-public class ListElement {
+import java.io.Serializable;
+
+public class ListElement implements Serializable {
     public String getName() {
         return name;
     }

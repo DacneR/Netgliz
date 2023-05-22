@@ -33,14 +33,14 @@ public class menuP extends AppCompatActivity {
         ListAdapter adaptador = new ListAdapter(elementos, this, new ListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(ListElement item) {
-                //moveToDescription(item);
+                moveToDescription(item);
             }
         });
         contenedor.setLayoutManager(new LinearLayoutManager(this));
         contenedor.setAdapter(adaptador);
     }
 
-    /*public void moveToDescription(ListElement item)
+    public void moveToDescription(ListElement item)
     {
         try {
             Intent in = new Intent(this,descripP.class);
@@ -50,6 +50,6 @@ public class menuP extends AppCompatActivity {
             Log.i("DEPURACION","Error capturado en movetodescription "+e);
         }
 
-    }*/
+    }
 
 }
