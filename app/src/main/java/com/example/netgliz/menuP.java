@@ -20,7 +20,12 @@ public class menuP extends AppCompatActivity {
         setContentView(R.layout.activity_menu_p);
 
         elementos = new ArrayList<>();
-        elementos.add(new ListElement("El hombre araña","el man araña pa","accion"));
+        elementos.add(new ListElement("El hombre araña","el man araña pa","accion",R.drawable.img_uno));
+        elementos.add(new ListElement("deluxe","un hombre acechando la ciudad","accion",R.drawable.img_dos));
+        elementos.add(new ListElement("El hombre x","el man x pa","accion",R.drawable.img_tres));
+        elementos.add(new ListElement("El hombre x","el man x pa","accion",R.drawable.img_cuatro));
+        elementos.add(new ListElement("El hombre x","el man x pa","accion",R.drawable.img_cinco));
+        elementos.add(new ListElement("El hombre x","el man x pa","accion",R.drawable.img_seis));
 
         RecyclerView contenedor = findViewById(R.id.Contenedor);
         contenedor.setHasFixedSize(true);

@@ -25,11 +25,22 @@ public class ListElement {
         this.genero = genero;
     }
 
-    public ListElement(String name, String descrip, String genero) {
+    public ListElement(String name, String descrip, String genero, int img) {
         this.name = name;
         this.descrip = descrip;
         this.genero = genero;
+        this.img = img;
     }
 
     public String name, descrip, genero;
+
+    public int getImg() {
+        return img;
+    }
+
+    public void setImg(int img) {
+        this.img = img;
+    }
+
+    public int img;
 }

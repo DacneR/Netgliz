@@ -47,6 +47,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         holder.binData(mData.get(position));
+
     }
 
     @Override
@@ -56,6 +57,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
 
     public  class viewHolder extends  RecyclerView.ViewHolder{
         TextView name, descrip, genero;
+        ImageView img;
 
         CardView cv;
 
@@ -65,6 +67,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
             descrip = itemView.findViewById(R.id.descripTextView);
             genero = itemView.findViewById(R.id.generoTextView);
             cv = itemView.findViewById(R.id.cardView);
+            img = itemView.findViewById(R.id.iconoImageView);
 
         }
 
@@ -72,6 +75,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.viewHolder> {
             name.setText(item.getName());
             descrip.setText(item.getDescrip());
             genero.setText(item.getGenero());
+            img.setImageResource(item.getImg());
+
 
             try {
                 itemView.setOnClickListener(new View.OnClickListener() {
